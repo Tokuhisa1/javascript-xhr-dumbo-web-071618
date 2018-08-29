@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <title>JavaScript XHR</title>
+    <title> JavaScript XHR </title>
+
     <style>
       .flexbox-container {
         display: -ms-flex;
@@ -19,15 +21,28 @@
       }
     </style>
   </head>
+
   <body>
     <div class="flexbox-container">
+
       <div>
         <h3>Repositories</h3>
+        <!-- The first thing we want to do is get a list of our public
+        repositories. -->
+        <a href="#" onclick="getRepositories()">Get Repositories</a>
+        <!-- Let's parse this response and list out the repositories on the
+        page. -->
+        <div id="repositories"></div>
       </div>
+
       <div>
         <h3>Commits</h3>
+        <!-- Let's create a place in our HTML to put the commits. -->
+        <div id="commits"></div>
       </div>
+
     </div>
     <script src="index.js"></script>
+
   </body>
 </html>
